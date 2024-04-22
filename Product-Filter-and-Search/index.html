@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Product Filter and Search</title>
+</head>
+<body>
+  <div class="wraper">
+    <div id="search-container">
+      <input
+        type="search"
+        id="search-input"
+        placeholder="Search product name here.."
+      />
+      <button id="search" type="button">Search</button>
+    </div>
+    <div id="buttons">
+      <button class="button-value" type="button" onclick="filterProduct('all')">All</button>
+      <button class="button-value" type="button" onclick="filterProduct('Topwear')">
+        Top wear
+      </button>
+      <button class="button-value" type="button" onclick="filterProduct('Bottomwear')">
+        Bottom wear
+      </button>
+      <button class="button-value" type="button" onclick="filterProduct('Jacket')">
+        Jacket
+      </button>
+      <button class="button-value" type="button" onclick="filterProduct('Watch')">
+        Watch
+      </button>
+    </div>
+    <div id="products"></div>
+  </div>
+  </div>
+  <!-- script tag inject here -->
+  <script src="scripts/script.js"></script>
+</body>
+</html>

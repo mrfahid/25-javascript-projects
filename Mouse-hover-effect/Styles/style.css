@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  cursor: none;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+#title {
+  display: inline;
+  position: absolute;
+  font-size: 6em;
+  font-family: "Poppins";
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+}
+
+#move-div {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+
+@media screen and (max-width: 768px){
+  #title {
+    font-size: 1.4em;
+  }
+  #move-div {
+    width: 10px;
+    height: 10px;
+  }
+}
